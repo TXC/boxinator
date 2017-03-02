@@ -16,10 +16,10 @@ class CreateBoxesTable extends Migration
         Schema::create('boxes', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->string('name');
+            $table->string('name', 255);
             $table->float('weight');
-            $table->string('color');
-            $table->string('destination', 50);
+            $table->string('color', 7);
+            $table->string('destination', 10);
 
             $table->timestamps();
             $table->softDeletes();
