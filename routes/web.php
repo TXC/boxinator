@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/addbox', 'Box@create');
+Route::get('/listboxes', 'Box@list');
