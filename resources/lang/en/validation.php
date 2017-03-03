@@ -14,7 +14,7 @@ return [
     */
 
     'colorishex'           => 'The :attribute field must contain a valid hex RGB string',
-    'colorisblue'          => 'The :attribute field can not contain a blue color',
+    'colorisnotblue'       => 'The :attribute field can not contain a blue color',
 
     'accepted'             => 'The :attribute must be accepted.',
     'active_url'           => 'The :attribute is not a valid URL.',
