@@ -10,10 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('index');
 });
 
 Route::get('/addbox', 'Box@create');
 Route::get('/listboxes', 'Box@list');
+*/
+
+Route::any('{all}', function () {
+    return view('index');
+})->where(['all' => '.*']);
