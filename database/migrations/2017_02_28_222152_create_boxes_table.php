@@ -17,7 +17,7 @@ class CreateBoxesTable extends Migration
             $table->increments('id');
 
             $table->string('name', 255);
-            $table->float('weight');
+            $table->float('weight', 12, 2);
             $table->string('color', 7);
             $table->string('destination', 10);
 

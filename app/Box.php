@@ -35,7 +35,7 @@ class Box extends Model
                 $rate = 7.2;
                 break;
         }
-        $this->cost = ($this->weight * $rate);
+        $this->cost = round( ($this->weight * $rate), 2);
 
         return $this;
     }
