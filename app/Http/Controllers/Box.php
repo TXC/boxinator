@@ -35,7 +35,7 @@ class Box extends Controller
 
         $box->save();
 
-        return response()->json([['Added']]);
+        return '';
 
     }
 
